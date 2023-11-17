@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Hồ Cá CSS3</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="./style/stylefish.css">
-	
+    <title>Hồ Cá CSS3</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-blue-beautiful-aquarium-creature-fish-background-image_193473.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        #background {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+
+        #shark {
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            width: 298px;
+            height: 149px; 
+            animation: Shark 10s linear infinite;
+            transform: scaleX(1);
+        }
+
+        @keyframes Shark {
+            0% { left: 100px; top: 200px; }
+            25% { left: 500px; top: 200px; }
+            50% { left: 900px; top: 200px; transform: scaleX(-1); }
+            75% { left: 500px; top: 200px; transform: scaleX(1); }
+            100% { left: 100px; top: 200px; }
+        }
+        #shark2 {
+            position: absolute;
+            left: 500px;
+            top: 300px;
+            width: 45px;
+            height: 149px; 
+            animation: Shark 70s linear infinite;
+            transform: scaleX(2);
+        }
+        @keyframes Shark2 {
+            0% { left: 100px; top: 200px; }
+            25% { left: 650px; top: 200px; }
+            50% { left: 900px; top: 200px; transform: scaleX(-1); }
+            75% { left: 500px; top: 200px; transform: scaleX(1); }
+            100% { left: 100px; top: 200px; }
+        }
+    </style>
 </head>
 <body>
 
-<div id="container">
-<div id="backgroundimg"> <img src="./assets/360_F_146213902_ak8DBeoEjx02APhq7ETcPUBQ1NKrgKr7.jpg" alt="background"></div>
-<div id="shark"><img src="assets/giphy.gif"; width="298" height="149"></div>
-<div id="reu"><img src="assets/reu.gif"; width="600px" height="400px"></div>
-<div id="cua"><img src="assets/snapedit_1699328430824.png" width="200px" height="150px"></div>
-<div id="bachtuoc"><img src="assets/bach.png" height="200px" width="300px"></div>
-
-	
-	
+<div id="background">
+    <div id="shark"><img src="assets/goldFishSchool.png"298" height="149" alt="Shark Image"></div>
+    <div id="shark2"><img src="assets/turtle.png" width="100" height="100" alt="Shark Image"></div>
 </div>
 
 </body>
